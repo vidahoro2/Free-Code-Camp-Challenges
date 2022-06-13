@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="header">
+        <h1 id="title">Trading Form</h1>
+        <p id="description">Please tell us about different assets you trade</p>
+    </section>
+
+    <section class="form-container">
+        <form action="survey-form" id="survey-form">
+
+            <div class="Basic-datas">
+
+                <div class="name-container">
+                    <label for="name-label1" class="item" id="name-label" >Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="email" id="email-label" class="item">Email</label>
+                    <input type="email" name="email" id="email"  placeholder="Enter you Email" required>
+
+                </div>
+     
+                <div>
+                    <label for="number" id="number-label" class="item" >Age
+                        <span class="clue">(optional)</span>
+                    </label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                    
+                </div>
+
+                <div>
+                    <label for="assets" class="item">Which asset do you trade the most?</label>
+                    <select name="assets" id="dropdown" class="form-control" required>
+                        <option disabled selected value> Select assets</option>
+                        <option value="Crypto">Crypto</option>
+                        <option value="Forex">Forex</option>
+                        <option value="ETF">ETF</option>
+                        <option value="Index">Index</option>
+                </div>
+            </select>
+
+
+            </div>
+            <div class="form-group">
+                <p class="item">Which broker do you use?</p>
+                <label> <input name="user-broker" value="TD AmeriTrade" type="radio" class="input-radio" checked>TD AmeriTrade</label>
+                <label> <input name="user-broker" value="Quantfury" type="radio" class="input-radio" >Quantfury</label>
+                <label> <input name="user-broker" value="Bybit" type="radio" class="input-radio">Bybit</label>
+            </div>
+
+            <div class="form-group">
+                <p>Select different mistakes that usualy retail trader does when trading</p>
+                <label> <input type="checkbox" name="prefer" value="Fear" class="input-checkbox"> Fear</label>
+                <label> <input type="checkbox" name="prefer" value="Greed" class="input-checkbox"> Greed</label>
+                <label> <input type="checkbox" name="prefer" value="FOMO" class="input-checkbox"> FOMO</label>
+                <label> <input type="checkbox" name="prefer" value="SL" class="input-checkbox"> Do not use SL</label>
+
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" placeholder="Enter your comment here..." id="comments" class="input-textarea" ></textarea>
+
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit </button>
+
+            </div>
+        </form>
+
+    </section>
+        
+</body>
+</html>

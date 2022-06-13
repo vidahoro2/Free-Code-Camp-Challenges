@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%; 
+    height: auto;
+    display:block;
+}
+
+body{
+    background: #FFFFFF;
+}
+
+#title{
+    text-align: center;
+    color: #333333;
+    background:#EEEEEE;
+    height: 7rem ;
+    padding-top: 2.5rem;
+}
+#img-div{
+    margin:2rem 25% ;
+}
+#img-caption{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+#tribute-info{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+
+}
+#tribute-link{
+    font-size: 2rem;
+    display: inline-block;
+    color: #6CB6CC;
+    
+
+}
