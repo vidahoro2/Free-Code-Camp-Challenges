@@ -16,6 +16,7 @@ html{
     width: 100%;
     background: #FF8360;
     position: fixed ;
+    top: 0;
 
 }
 #header-img{
@@ -52,6 +53,8 @@ li a{
 main{
     background: #E8E288 ;
     height: auto;
+    width: 100%;
+    
 }
 h1{
     position: absolute;
@@ -66,6 +69,7 @@ h1{
     justify-content: center;
     align-content: center;
     height: 28rem;
+    margin-top: 10rem;
     
 }
 video{
@@ -81,7 +85,6 @@ video{
     font-size: 2rem;
     color: #FF8360;
     margin: 1rem auto;
-    
     text-align: center;
 }
 form{
@@ -124,14 +127,16 @@ form{
 }
 .productos{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(17rem,1fr));
     grid-template-rows: repeat(1,25rem);
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 .producto-1{
     display: grid;
     justify-content: center;
     text-align: center;
+    margin-top: 2rem;
+
 }
 .img1{
     width: 15rem;
@@ -170,6 +175,9 @@ footer{
 @media (max-width: 400px) {
     h1{
         color: black;
+    }
+    #video1{
+        display: none;
     }
     
 }
